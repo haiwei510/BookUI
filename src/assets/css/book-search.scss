@@ -1,0 +1,20 @@
+ @import './common/mixin.scss';
+#book-search {
+   @include width_auto_center;
+   @include box_border;
+    .main-box {
+        height: 500px;
+        position: relative;
+        .sign-box {
+            position: absolute;
+            height: 100%;
+            width: 225px;
+            left: 0;
+            top: 0;
+            background: #684C5D;
+        }
+        .book-list-box {
+            margin-left: 225px;
+        }
+    }
+}

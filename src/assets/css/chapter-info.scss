@@ -1,0 +1,99 @@
+@import './common/mixin.scss';
+#chapter-info-box {
+    background-color: #DAD3D3;
+    .path-from {
+        width: 1000px;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        color: #333333;
+        font-size: 12px;
+    }
+    .head-box {
+        background-color: rgba(143, 131, 147, 0.1);
+        height: 80px;
+        margin: 0 auto;
+        .head-content {
+            width: 1000px;
+            margin: 0 auto;
+            .logo {
+                line-height: 80px;
+                font-size: 20px;
+            }
+            .user-img{
+                margin-top: 22px;
+                float: right;
+                height: 30px;
+                height: 30px;
+                overflow: hidden;
+                border-radius: 100%;
+                img{
+                    height: 100%;
+                    width: auto;
+                }
+            }
+        }
+    }
+    .bookself {
+        float: right;
+        line-height: 80px;
+        height: 80px;
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+        &:hover{
+            color: #A6A6A6;
+        }
+        .icon-self{
+            position: absolute;
+            left: 10px;
+            top: 31px;
+        }
+    }
+    .content-title {
+        padding-top: 20px;
+        padding-left: 20px;
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .content-info {
+        background-color: rgba(255, 255, 255, 0.2);
+        width: 1000px;
+        margin: 0 auto;
+        border: solid #D9D9D9 1px;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 18px;
+        font-weight: 500;
+        p {
+            line-height: 40px;
+        }
+        .txt-num {
+            line-height: 25px;
+            font-size: 12px;
+            color: #A6A6A6;
+            margin-left: 15px;
+            span {
+                margin-left: 15px;
+            }
+        }
+    }
+    .change-content {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 20px 0;
+        ul {
+            overflow: hidden;
+            li {
+                font-size: 16px;
+                font-weight: 500;
+                float: left;
+                width: 33.33333333333%;
+                line-height: 40px;
+                height: 40px;
+                cursor: pointer;
+                text-align: center;
+            }
+        }
+    }
+}
