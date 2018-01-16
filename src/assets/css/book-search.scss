@@ -1,12 +1,9 @@
  @import './common/mixin.scss';
  #book-search {
-     .head-box {
-         height: 120px;
-     }
+     overflow: hidden;
      @include width_auto_center;
      @include box_border;
      .main-box {
-         height: 500px;
          position: relative;
          .sign-box {
              position: absolute;
@@ -14,7 +11,54 @@
              width: 225px;
              left: 0;
              top: 0;
-             background: #684C5D;
+             box-sizing: border-box;
+             padding: 10px;
+             padding-top: 0;
+             .title-type {
+                 padding-bottom: 5px;
+                 padding-top: 15px;
+             }
+             .type-check {
+                 padding-bottom: 5px;
+             }
+             .checked-show {
+                 padding: 1px 4px;
+                 background-color: $color_red;
+                 color: #FFFFFF;
+                 font-size: 12px;
+             }
+             .sign-type-box {
+                 padding-bottom: 15px;
+                 border-bottom: solid #eee 1px;
+                 .ul-type {
+                     overflow: hidden;
+                     li {
+                         padding: 5px 0;
+                         height: 20px;
+                         float: left;
+                         width: 20%;
+                         padding-bottom: 2px;
+                         cursor: pointer;
+                         &:hover {
+                             color: $color_red;
+                         }
+                     }
+                     .checked {
+                         background-color: #333333;
+                         color: #FFFFFF;
+                         &:hover {
+                             color: #FFFFFF;
+                         }
+                     }
+                     a {
+                         padding: 1px 4px;
+                         font-size: 12px;
+                         &:hover {
+                             color: $color_red;
+                         }
+                     }
+                 }
+             }
          }
          .book-list-box {
              margin-left: 240px;
@@ -65,12 +109,13 @@
                  left: 0;
                  height: 135px;
                  width: 100px;
+                 box-shadow: 0 1px 6px rgba(0, 0, 0, .35);
                  img {
                      height: 100%;
                      width: auto;
                  }
              }
-             .book-content {
+             .book-content-sh {
                  margin-left: 120px;
                  .book-name {
                      font-size: 16px;
@@ -125,6 +170,7 @@
      }
      .page-change-box {
          padding-top: 50px;
+         padding-right: 20px;
          ul {
              float: right;
              overflow: hidden;
@@ -137,12 +183,11 @@
                  width: 50px;
                  text-align: center;
                  position: relative;
-                 .ico-btn{
+                 .ico-btn {
                      position: absolute;
                      top: 11px;
                  }
              }
-             
          }
          p {
              float: right;

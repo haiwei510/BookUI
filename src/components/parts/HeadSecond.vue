@@ -1,7 +1,7 @@
 <template>
 	<div class="title-box">
 		<div class="title-summary">
-			<a class="a-home">断言中文网</a>
+			<a class="a-home">断言小说</a>
 			<ul class="type-list">
 				<li>排行榜</li>
 				<li>免费</li>
@@ -51,6 +51,7 @@
 			height: 100%;
 			line-height: 40px;
 			font-size: 20px;
+			font-family: glu;
 		}
 		.type-list {
 			height: 100%;

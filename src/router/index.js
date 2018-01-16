@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '@/components/Index'
 import HeadIndex from '@/components/parts/HeadIndex'
-import BooterIndex from '@/components/parts/BooterIndex'
+import Booter from '@/components/parts/Booter'
 import ShowType from '@/components/ShowType'
 import BookInfo from '@/components/BookInfo'
 import ChapterInfo from '@/components/ChapterInfo'
@@ -17,13 +17,16 @@ export default new Router({
 			components: {
 				default: Index,
 				head: HeadIndex,
-				booter: BooterIndex,
+				booter: Booter,
 			}
 		},
 		{
 			path: '/showType',
 			name: 'ShowType',
-			component: ShowType
+			components: {
+				default:ShowType,
+				booter: Booter
+			}
 		},
 		{
 			path: '/bookInfo',
@@ -38,7 +41,11 @@ export default new Router({
 		{
 			path: '/bookSearch',
 			name: 'BookSearch',
-			component: BookSearch
+			components: {
+				default:BookSearch,
+				head: HeadIndex,
+				booter: Booter
+			}
 		}
 	]
 })

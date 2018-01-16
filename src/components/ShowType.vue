@@ -114,6 +114,6 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped="scoped">
 	@import '../assets/css/show-type.scss'
 </style>

@@ -69,6 +69,6 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped="scoped">
 	@import '../assets/css/chapter-info.scss'
 </style>

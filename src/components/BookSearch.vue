@@ -1,11 +1,101 @@
 <template>
 	<div id="book-search">
-		<header class="head-box">
-
-		</header>
+		<router-view name='head'></router-view>
 		<div class="main-box">
 			<div class="sign-box">
+				<div class="sign-type-box">
+					<h4 class="type-check">已选</h4>
+					<ul class="ul-type">
+						<li><span class="checked-show">全部</span></li>
+					</ul>
+				</div>
 
+				<div class="sign-type-box">
+					<h4 class="title-type">分类</h4>
+					<ul class="ul-type">
+						<li>
+							<a class="checked">全部</a>
+						</li>
+						<li>
+							<a>玄幻</a>
+						</li>
+						<li>
+							<a>奇幻</a>
+						</li>
+						<li>
+							<a>武侠</a>
+						</li>
+						<li>
+							<a>仙侠</a>
+						</li>
+						<li>
+							<a>都市</a>
+						</li>
+						<li>
+							<a>游戏</a>
+						</li>
+						<li>
+							<a>言情</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sign-type-box">
+					<h4 class="title-type">状态</h4>
+					<ul class="ul-type">
+						<li>
+							<a class="checked">全部</a>
+						</li>
+						<li>
+							<a>连载</a>
+						</li>
+						<li>
+							<a>完本</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sign-type-box">
+					<h4 class="title-type">更新时间</h4>
+					<ul class="ul-type">
+						<li>
+							<a class="checked">全部</a>
+						</li>
+						<li>
+							<a>三日内</a>
+						</li>
+						<li>
+							<a>七日内</a>
+						</li>
+						<li>
+							<a>半月内</a>
+						</li>
+						<li>
+							<a>一月内</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sign-type-box">
+					<h4 class="title-type">标签</h4>
+					<ul class="ul-type">
+						<li>
+							<a class="checked">全部</a>
+						</li>
+						<li>
+							<a>丹药</a>
+						</li>
+						<li>
+							<a>功法</a>
+						</li>
+						<li>
+							<a>龙</a>
+						</li>
+						<li>
+							<a>穿越</a>
+						</li>
+						<li>
+							<a>重生</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 
 			<div class="book-list-box">
@@ -22,7 +112,7 @@
 						<div class="book-picture-box">
 							<a><img src="../assets/img/bookitem.png"></a>
 						</div>
-						<div class="book-content">
+						<div class="book-content-sh">
 							<p class="book-name">
 								<a>不朽凡人</a>
 							</p>
@@ -48,7 +138,6 @@
 							<icon class="ico-btn" name="angle-right"></icon>
 						</li>
 					</ul>
-
 				</div>
 
 			</div>
@@ -73,6 +162,6 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped="scoped">
 	@import "../assets/css/book-search.scss"
 </style>

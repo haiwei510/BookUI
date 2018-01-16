@@ -312,8 +312,8 @@
 		<BookList title="人气连载"></BookList>
 
 		<BookList title="精彩完本"></BookList>
-
 		<UpdateNew></UpdateNew>
+		<router-view name='booter'></router-view>
 	</div>
 </template>
 
@@ -334,6 +334,6 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped="scoped">
 	@import '../assets/css/content-index.scss'
 </style>

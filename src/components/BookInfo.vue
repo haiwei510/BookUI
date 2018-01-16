@@ -125,6 +125,6 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped="scoped">
 	@import '../assets/css/book-info.scss'
 </style>
