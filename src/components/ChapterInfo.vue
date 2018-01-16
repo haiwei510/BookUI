@@ -1,10 +1,39 @@
 <template>
 	<div id="chapter-info-box">
 
+		<div class="left-menu">
+			<ul>
+				<li>
+					<icon scale="0.9" class="catalog" name="list"></icon>目录</li>
+				<li>
+					<icon class="set-txt" name="cog"></icon>设置</li>
+				<li>
+					<icon class="add-bookself" name="plus"></icon>书架</li>
+
+			</ul>
+		</div>
+		
+		<div class="set-panel">
+			<p>设置</p>
+			<div class="bg-color-box">
+				<label>背景色</label>
+				<ul class="ul-bg-clolr">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		
+
 		<div class="head-box">
 			<div class="head-content">
-				<span class="logo">断言中文网</span>
-			
+				<span class="logo">断言小说</span>
+
 				<div class="bookself">
 					<icon class="icon-self" name='paper-plane-o'></icon>我的书架</div>
 			</div>
@@ -13,6 +42,7 @@
 			首页>古代言情>福晋妖娆>四爷上瘾
 		</div>
 		<div class="content-info">
+
 			<div>
 				<p class="content-title">第8章小丫头，很会玩嘛<label class="txt-num">本章3544字<span>2018-01-14</span></label></p>
 			</div>
@@ -60,6 +90,9 @@
 <script>
 	import 'vue-awesome/icons/paper-plane-o'
 	import 'vue-awesome/icons/search'
+	import 'vue-awesome/icons/list'
+	import 'vue-awesome/icons/cog'
+	import 'vue-awesome/icons/plus'
 	import Icon from 'vue-awesome/components/Icon'
 
 	export default {

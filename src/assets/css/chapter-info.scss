@@ -1,6 +1,100 @@
 @import './common/mixin.scss';
 #chapter-info-box {
     background-color: #DAD3D3;
+    .left-menu {
+        z-index: 4;
+        position: fixed;
+        left: 20px;
+        left: calc((100% - 1140px) / 2);
+        top: 139px;
+        width: 60px;
+        background-color: rgba(255, 255, 255, 0.5);
+        ul {
+            font-size: 12px;
+            color: #A6A6A6;
+            li {
+                text-align: center;
+                height: 60px;
+                line-height: 85px;
+                border-bottom: solid #DAD3D3 1px;
+                position: relative;
+                cursor: pointer;
+                .catalog,
+                .set-txt,
+                .add-bookself {
+                    position: absolute;
+                    top: 13px;
+                    color: #000;
+                    left: 23px;
+                }
+            }
+            li:nth-child(2) {
+                width: 52px;
+                background-color: #f5f0f6;
+                text-align: left;
+                padding-left: 18px;
+                box-shadow: -3px 4px 6px 0px #A6A6A6;
+            }
+        }
+    }
+    .set-panel {
+        height: 400px;
+        width: 500px;
+        position: fixed;
+        background-color: #f5f0f6;
+        top: 139px;
+        left: calc((100% - 1000px) / 2);
+        z-index: 2;
+        box-shadow: 0 0 4px 2px #A6A6A6;
+        p:nth-child(1) {
+            padding: 30px 15px;
+            font-weight: 500;
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+        .bg-color-box {
+            position: relative;
+            label{
+                color: #191b1c;
+                top: 8px;
+                left: 15px;
+                position: absolute;
+            }
+            .ul-bg-clolr {
+                padding-left: 70px;
+                li {
+                    float: left;
+                    margin-right: 20px;
+                    width: 40px;
+                    height: 40px;
+                    border: solid #DAD3D3 1px;
+                    border-radius: 50%;
+                }
+                li:nth-child(1) {
+                    background: #faf5eb;
+                }
+                li:nth-child(2) {
+                    background: #f5eacc;
+                }
+                li:nth-child(3) {
+                    background: #e6f2e6;
+                }
+                li:nth-child(4) {
+                    background: #e4f1f5;
+                }
+                li:nth-child(5) {
+                    background: #f5e4e4;
+                }
+                li:nth-child(6) {
+                    background: #e0e0e0;
+                }
+                li:nth-child(7) {
+                    background: #191b1c;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
     .path-from {
         width: 1000px;
         margin: 0 auto;
@@ -18,16 +112,17 @@
             margin: 0 auto;
             .logo {
                 line-height: 80px;
-                font-size: 20px;
+                font-size: 28px;
+                font-family: glu;
             }
-            .user-img{
+            .user-img {
                 margin-top: 22px;
                 float: right;
                 height: 30px;
                 height: 30px;
                 overflow: hidden;
                 border-radius: 100%;
-                img{
+                img {
                     height: 100%;
                     width: auto;
                 }
@@ -41,10 +136,10 @@
         position: relative;
         padding-left: 30px;
         cursor: pointer;
-        &:hover{
+        &:hover {
             color: #A6A6A6;
         }
-        .icon-self{
+        .icon-self {
             position: absolute;
             left: 10px;
             top: 31px;
@@ -65,6 +160,7 @@
         box-sizing: border-box;
         font-size: 18px;
         font-weight: 500;
+        position: relative;
         p {
             line-height: 40px;
         }
