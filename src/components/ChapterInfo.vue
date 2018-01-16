@@ -1,6 +1,6 @@
 <template>
 	<div id="chapter-info-box">
-
+		<HeadSecond></HeadSecond>
 		<div class="left-menu">
 			<ul>
 				<li>
@@ -12,12 +12,12 @@
 
 			</ul>
 		</div>
-		
+
 		<div class="set-panel">
 			<p>设置</p>
-			<div class="bg-color-box">
+			<div class="set-item-box">
 				<label>背景色</label>
-				<ul class="ul-bg-clolr">
+				<ul class="ul-item-comm ul-bg-clolr">
 					<li></li>
 					<li></li>
 					<li></li>
@@ -27,15 +27,29 @@
 					<li></li>
 				</ul>
 			</div>
-		</div>
-		
-
-		<div class="head-box">
-			<div class="head-content">
-				<span class="logo">断言小说</span>
-
-				<div class="bookself">
-					<icon class="icon-self" name='paper-plane-o'></icon>我的书架</div>
+			<div class="set-item-box">
+				<label>正文字体</label>
+				<ul class="ul-item-comm ul-txt-family">
+					<li>雅黑</li>
+					<li>宋体</li>
+					<li>楷书</li>
+				</ul>
+			</div>
+			<div class="set-item-box">
+				<label>字体大小</label>
+				<ul class="ul-item-comm ul-txt-size">
+					<li>A-</li>
+					<li>12</li>
+					<li>A+</li>
+				</ul>
+			</div>
+			<div class="set-item-box">
+				<label>页面宽度</label>
+				<ul class="ul-item-comm ul-txt-size">
+					<li><icon class="ico-pager" name="file-word-o"></icon>-</li>
+					<li>800</li>
+					<li><icon class="ico-pager" name="file-word-o"></icon>+</li>
+				</ul>
 			</div>
 		</div>
 		<div class="path-from">
@@ -93,11 +107,14 @@
 	import 'vue-awesome/icons/list'
 	import 'vue-awesome/icons/cog'
 	import 'vue-awesome/icons/plus'
+	import 'vue-awesome/icons/file-word-o'
 	import Icon from 'vue-awesome/components/Icon'
+	import HeadSecond from '@/components/parts/HeadSecond'
 
 	export default {
 		components: {
-			Icon
+			Icon,
+			HeadSecond
 		}
 	}
 </script>
