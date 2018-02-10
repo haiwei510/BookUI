@@ -322,6 +322,8 @@
 	import BookList from '@/components/parts/BookList'
 	import UpdateNew from '@/components/parts/UpdateNew'
 	import GridBook from '@/components/parts/GridBook'
+	import indexJS from '@/assets/js/indexJs.js'
+	
 
 	export default {
 		components: {
@@ -329,9 +331,17 @@
 			BookList,
 			UpdateNew,
 			GridBook
+		},
+		mounted: function() {
+			this.$nextTick(function() {
+				console.log(indexJS);
+				indexJS.getData(this.$axios);
+			})
 		}
 
 	}
+
+
 </script>
 
 <style lang="scss" scoped="scoped">
