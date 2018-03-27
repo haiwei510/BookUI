@@ -306,7 +306,7 @@
 					</ul>
 				</div>
 			</div>
-      测试GIT
+      测试GITSSS
 		</div>
 
 		<BookList title="人气连载"></BookList>
