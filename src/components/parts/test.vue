@@ -1,7 +1,6 @@
 <template>
     <div>
-      我完成了一半我打了一个tag，
-      中间做了修改
+      TAGATAAGAGAF
     </div>
 </template>
 
