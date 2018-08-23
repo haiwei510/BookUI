@@ -154,9 +154,6 @@
 						<li>
 							<a><label>「玄幻」</label><span>风消逝新书君临星空</span></a>
 						</li>
-						<li>
-							<a><label>「玄幻」</label><span>风消逝新书君临星空</span></a>
-						</li>
 
 					</ul>
 				</div>
@@ -323,7 +320,7 @@
 	import UpdateNew from '@/components/parts/UpdateNew'
 	import GridBook from '@/components/parts/GridBook'
 	import indexJS from '@/assets/js/indexJs.js'
-	
+
 
 	export default {
 		components: {
